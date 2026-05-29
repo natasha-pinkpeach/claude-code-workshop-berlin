@@ -2,24 +2,26 @@ import { contact } from "../content";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 border-t border-ink/10">
-      <h2 className="text-3xl font-semibold mb-4">{contact.heading}</h2>
-      <p className="text-lg text-ink/80 leading-relaxed max-w-xl">
+    <section id="contact" className="py-24 -mx-8 md:-mx-16 px-8 md:px-16 bg-tealdeep text-paper">
+      <h2 className="font-sans text-xs font-medium uppercase tracking-[0.3em] text-mandarin mb-12">
+        {contact.heading}
+      </h2>
+      <p className="font-serif text-3xl md:text-5xl font-light leading-relaxed text-paper/85 max-w-3xl mb-14">
         {contact.body}
       </p>
-      <div className="mt-6 space-y-3">
+      <div className="flex flex-col md:flex-row md:items-center gap-8">
         <a
           href={`mailto:${contact.email}`}
-          className="block text-lg text-accent hover:underline"
+          className="font-sans text-sm font-medium uppercase tracking-[0.2em] border-b border-paper/30 pb-1 hover:border-mandarin hover:text-mandarin transition-colors"
         >
           {contact.email}
         </a>
-        <ul className="flex flex-wrap gap-x-4 gap-y-2 text-ink/70">
+        <ul className="flex flex-wrap gap-8">
           {contact.socials.map((s, i) => (
             <li key={i}>
               <a
                 href={s.href}
-                className="hover:text-accent transition"
+                className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-paper/40 hover:text-mandarin transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >

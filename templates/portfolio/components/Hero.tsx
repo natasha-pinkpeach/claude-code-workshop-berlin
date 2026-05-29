@@ -2,29 +2,31 @@ import { hero } from "../content";
 
 export function Hero() {
   return (
-    <section className="pt-24 pb-16 md:pt-32 md:pb-24">
-      <p className="text-sm font-medium uppercase tracking-wider text-accent">
-        {hero.role} · {hero.location}
+    <section className="bg-blush min-h-screen flex flex-col justify-end px-8 md:px-16 pb-20 pt-32 -mx-8 md:-mx-16">
+      <p className="font-sans text-xs font-medium uppercase tracking-[0.3em] text-accent mb-6">
+        {hero.name} · {hero.role} · {hero.location}
       </p>
-      <h1 className="mt-3 text-5xl md:text-6xl font-bold tracking-tight">
-        Hi, I&apos;m <span className="text-accent">{hero.name}</span>
+      <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-light leading-[0.95] tracking-tight mb-12 max-w-5xl text-ink">
+        {hero.title}
       </h1>
-      <p className="mt-6 text-xl text-ink/75 leading-relaxed max-w-xl">
-        {hero.headline}
-      </p>
-      <div className="mt-10 flex flex-wrap gap-3">
-        <a
-          href={hero.ctaPrimary.href}
-          className="inline-block px-6 py-3 bg-ink text-paper rounded-full font-medium hover:opacity-90 transition"
-        >
-          {hero.ctaPrimary.label}
-        </a>
-        <a
-          href={hero.ctaSecondary.href}
-          className="inline-block px-6 py-3 border border-ink/15 rounded-full font-medium hover:bg-ink/5 transition"
-        >
-          {hero.ctaSecondary.label}
-        </a>
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-10">
+        <p className="font-sans text-lg md:text-xl text-ink/60 leading-relaxed max-w-lg font-light">
+          {hero.headline}
+        </p>
+        <div className="flex flex-wrap gap-4 shrink-0">
+          <a
+            href={hero.ctaPrimary.href}
+            className="inline-block px-8 py-4 bg-ink text-paper font-sans text-xs font-medium uppercase tracking-[0.2em] hover:opacity-75 transition"
+          >
+            {hero.ctaPrimary.label}
+          </a>
+          <a
+            href={hero.ctaSecondary.href}
+            className="inline-block px-8 py-4 border border-ink/30 font-sans text-xs font-medium uppercase tracking-[0.2em] hover:bg-ink/5 transition"
+          >
+            {hero.ctaSecondary.label}
+          </a>
+        </div>
       </div>
     </section>
   );

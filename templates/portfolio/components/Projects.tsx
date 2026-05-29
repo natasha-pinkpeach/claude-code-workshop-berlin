@@ -2,24 +2,27 @@ import { projects } from "../content";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-16 border-t border-ink/10">
-      <h2 className="text-3xl font-semibold mb-8">{projects.heading}</h2>
-      <ul className="space-y-10">
+    <section id="projects" className="py-24 -mx-8 md:-mx-16 px-8 md:px-16 bg-lilac/10 border-y border-lilac/20">
+      <h2 className="font-sans text-xs font-medium uppercase tracking-[0.3em] text-accent mb-16">
+        {projects.heading}
+      </h2>
+      <ul className="grid md:grid-cols-2 gap-6">
         {projects.items.map((p, i) => (
-          <li key={i} className="group">
-            <div className="flex items-baseline justify-between gap-4">
-              <h3 className="text-xl font-medium group-hover:text-accent transition">
-                {p.title}
-              </h3>
-              <span className="text-sm text-ink/50">{p.year}</span>
-            </div>
-            <p className="mt-3 text-ink/75 leading-relaxed max-w-2xl">
-              {p.summary}
-            </p>
+          <li
+            key={i}
+            className="group bg-paper border border-lilac/25 p-10 hover:border-accent transition-colors duration-300"
+          >
+            <span className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-lilac">
+              {p.year}
+            </span>
+            <h3 className="font-serif text-2xl md:text-3xl font-light leading-tight mt-4 mb-5 group-hover:text-accent transition-colors duration-300">
+              {p.title}
+            </h3>
+            <p className="font-sans text-sm text-ink/60 leading-relaxed mb-8">{p.summary}</p>
             {p.link && (
               <a
                 href={p.link.href}
-                className="mt-3 inline-block text-sm font-medium text-accent hover:underline"
+                className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-accent/60 hover:text-accent transition-colors"
               >
                 {p.link.label} →
               </a>

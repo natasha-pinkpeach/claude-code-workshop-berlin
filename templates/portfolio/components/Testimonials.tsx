@@ -2,20 +2,18 @@ import { testimonials } from "../content";
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 border-t border-ink/10">
-      <h2 className="text-3xl font-semibold mb-8">{testimonials.heading}</h2>
-      <div className="grid md:grid-cols-2 gap-6">
+    <section id="testimonials" className="py-24 -mx-8 md:-mx-16 px-8 md:px-16 bg-accent text-paper">
+      <h2 className="font-sans text-xs font-medium uppercase tracking-[0.3em] text-mandarin mb-16">
+        {testimonials.heading}
+      </h2>
+      <div className="grid md:grid-cols-2 gap-16">
         {testimonials.quotes.map((q, i) => (
-          <figure
-            key={i}
-            className="p-6 rounded-2xl bg-ink/[0.03] border border-ink/10"
-          >
-            <blockquote className="text-ink/85 leading-relaxed">
+          <figure key={i}>
+            <blockquote className="font-serif text-2xl md:text-3xl font-light leading-relaxed text-paper/90 mb-8">
               &ldquo;{q.text}&rdquo;
             </blockquote>
-            <figcaption className="mt-4 text-sm">
-              <span className="font-medium">{q.author}</span>
-              <span className="text-ink/60"> · {q.role}</span>
+            <figcaption className="font-sans text-xs font-medium uppercase tracking-[0.25em] text-paper/50">
+              {q.author} · {q.role}
             </figcaption>
           </figure>
         ))}
