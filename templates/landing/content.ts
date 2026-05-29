@@ -5,49 +5,50 @@
 // ────────────────────────────────────────────────────────────────
 
 export const business = {
-  name: "Bloom Berlin Cosmetics",
-  shortName: "Bloom",
-  tagline: "Clean beauty, made in Mitte.",
+  name: "Hartmann Coffee Roasters",
+  shortName: "Hartmann",
+  tagline: "Small-batch coffee, roasted in Kreuzberg.",
 };
 
 export const nav = {
   links: [
-    { label: "Products", href: "#services" },
+    { label: "Services", href: "#services" },
     { label: "How it works", href: "#how" },
     { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" },
   ],
-  ctaLabel: "Shop now",
+  ctaLabel: "Order beans",
   ctaHref: "#contact",
 };
 
 export const hero = {
-  eyebrow: "Berlin · est. 2020",
-  heading: "Skincare that knows what it's made of.",
+  eyebrow: "Berlin · since 2018",
+  heading: "Coffee that tastes like someone made a choice.",
   subheading:
-    "We formulate small-batch cosmetics using natural ingredients sourced directly from European farms. No fillers, no greenwashing — just products that actually work.",
-  ctaPrimary: { label: "Shop now", href: "#contact" },
-  ctaSecondary: { label: "See our products", href: "#services" },
+    "We source single-origin beans from farms we've actually visited, roast them in small batches at our Kreuzberg studio, and deliver them to cafés and homes across Germany.",
+  ctaPrimary: { label: "Order beans", href: "#contact" },
+  ctaSecondary: { label: "See our services", href: "#services" },
 };
 
 export const services = {
-  heading: "What we make",
-  intro: "Three lines, made with intention.",
+  heading: "What we do",
+  intro:
+    "Three things, done seriously.",
   items: [
     {
-      title: "Daily skincare",
+      title: "Wholesale roasting",
       summary:
-        "Cleansers, serums, and moisturisers formulated for real skin. We work with dermatologists and use only ingredients we can trace to source. No synthetic fragrances.",
+        "Custom roast profiles for cafés and restaurants. We work with 23 venues across Berlin, Hamburg, and Munich. Weekly fresh delivery, transparent pricing.",
     },
     {
-      title: "Natural colour cosmetics",
+      title: "Direct-to-home subscriptions",
       summary:
-        "Lipsticks, blushes, and highlighters made with mineral pigments and plant-based waxes. Full coverage, long wear, and 100% free of parabens and microplastics.",
+        "Choose your beans, your frequency, and your grind. We ship within 48 hours of roasting. Pause or cancel anytime, no friction.",
     },
     {
-      title: "Bespoke formulation",
+      title: "Barista training",
       summary:
-        "Custom product development for boutique spas and wellness brands. We handle everything from concept to finished formula. Minimum run of 200 units.",
+        "Two-day intensive workshops for new café staff. Covers extraction, milk technique, and how to taste. Held in our Kreuzberg studio one Saturday a month.",
     },
   ],
 };
@@ -56,40 +57,40 @@ export const howItWorks = {
   heading: "How it works",
   steps: [
     {
-      title: "Tell us your skin type",
+      title: "Tell us what you like",
       summary:
-        "Dry, oily, sensitive, combination — take our 2-minute skin quiz and we'll match you with the right products from the start.",
+        "Bright and fruity? Deep and chocolatey? Send us a message or take our 60-second taste quiz.",
     },
     {
-      title: "We send a discovery kit",
+      title: "We send a tasting flight",
       summary:
-        "Four travel-size products tailored to your skin profile. €22 including shipping. No subscription required.",
+        "Three 100g bags, each from a different origin. €18 including shipping. No subscription required.",
     },
     {
-      title: "Build your routine",
+      title: "We dial in your favorite",
       summary:
-        "Keep what you love and order full sizes. We remember your preferences so reordering takes seconds.",
+        "Tell us which you preferred and we'll send 250g or 1kg bags of that one, roasted to order.",
     },
   ],
 };
 
 export const benefits = {
-  heading: "Why Bloom, honestly",
+  heading: "Why us, honestly",
   items: [
     {
-      title: "Every ingredient has a reason",
+      title: "We taste everything we send",
       summary:
-        "We publish our full formulations online. If an ingredient is in there, we can tell you exactly why — and what it does for your skin.",
+        "Every batch is cupped before it leaves the roastery. If we wouldn't drink it, you don't get it.",
     },
     {
-      title: "We know our suppliers",
+      title: "We know our farmers",
       summary:
-        "Our botanicals come from eight farms across Germany, France, and Bulgaria. Three of them we visit in person each year.",
+        "We work directly with seven farms across Ethiopia, Colombia, and Honduras. Two of them we visit in person each year.",
     },
     {
-      title: "Refillable packaging, always",
+      title: "We deliver fast or it's free",
       summary:
-        "Every Bloom product comes in a refillable glass container. Send back your empties and get 10% off your next order.",
+        "Beans ship within 48 hours of roasting. If your order is late, we refund the shipping. We haven't had to do that in 14 months.",
     },
   ],
 };
@@ -99,15 +100,15 @@ export const testimonials = {
   quotes: [
     {
       text:
-        "I've tried dozens of natural brands and most of them just don't perform. Bloom's serum is the first thing that's actually changed my skin. And I love that I can read every ingredient on the label.",
-      author: "Mia Hoffmann",
-      role: "Customer, Berlin",
+        "We switched to Hartmann two years ago and our regulars notice. The roasts are consistent and Andre actually visits the café to taste with us. That's not normal.",
+      author: "Lina Brückner",
+      role: "Owner, Café Erna",
     },
     {
       text:
-        "We stock Bloom in our spa and guests ask about it constantly. The bespoke formulation service was easy to work with and the final product feels genuinely premium.",
-      author: "Jonas Krüger",
-      role: "Owner, Studio Calm, Hamburg",
+        "I tried four roasters before settling on these guys. The Ethiopian Yirgacheffe they sent in March is the best coffee I've made at home.",
+      author: "Tomás Reiter",
+      role: "Home subscriber, Hamburg",
     },
   ],
 };
@@ -116,20 +117,20 @@ export const faq = {
   heading: "Common questions",
   items: [
     {
-      q: "Are your products vegan and cruelty-free?",
-      a: "Yes — every product is 100% vegan and we never test on animals. We are certified by PETA and Leaping Bunny.",
+      q: "Do you ship outside Germany?",
+      a: "Yes — we ship across the EU. Delivery takes 3–5 business days. Shipping costs vary by country.",
     },
     {
-      q: "How long does shipping take?",
-      a: "Orders within Germany arrive in 2–3 business days. EU orders take 4–6 business days. We ship within 24 hours of ordering.",
+      q: "How fresh are the beans when they arrive?",
+      a: "Roasted within 48 hours of shipping. We recommend brewing them within 6 weeks of the roast date printed on the bag.",
     },
     {
-      q: "Can I return a product if it doesn't suit my skin?",
-      a: "Yes. If a product doesn't work for you within 30 days, we'll refund it in full — no need to return the item.",
+      q: "Can I pause my subscription?",
+      a: "Anytime. Log in, pause as long as you want, restart when you're ready. No questions asked.",
     },
     {
-      q: "Do you do wholesale for boutiques?",
-      a: "We work with a small number of independent retailers. Send us an email with your shop details and we'll get back to you within two business days.",
+      q: "Do you do training for individuals?",
+      a: "Our group workshops are for professional baristas, but we offer one-on-one sessions on request. Email us and we'll work out a date.",
     },
   ],
 };
@@ -137,15 +138,15 @@ export const faq = {
 export const contact = {
   heading: "Get in touch",
   body:
-    "Product questions, wholesale enquiries, bespoke formulation — drop us a line. We reply within one business day.",
-  email: "hello@bloom-berlin.example",
-  phone: "+49 30 9876 5432",
+    "Wholesale questions, subscriptions, training enquiries — drop us a line. We reply within one business day.",
+  email: "hello@hartmann-coffee.example",
+  phone: "+49 30 1234 5678",
   hours: "Mon–Fri · 09:00 — 17:00 CET",
-  address: "Rosenthaler Straße 28, 10178 Berlin",
+  address: "Oranienstraße 42, 10999 Berlin",
 };
 
 export const meta = {
-  title: "Bloom Berlin Cosmetics — Clean beauty, made in Mitte.",
+  title: "Hartmann Coffee Roasters — Small-batch coffee, Kreuzberg",
   description:
-    "Small-batch natural cosmetics formulated in Berlin. Skincare, colour cosmetics, and bespoke formulation for boutique brands.",
+    "Single-origin beans, custom roasts, and barista training in Berlin.",
 };
